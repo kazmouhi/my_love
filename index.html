@@ -1,27 +1,43 @@
-<header class="hero">
-  <div class="hero-inner">
-    <h1>Happy 14/2 💝</h1>
-    <p class="subtitle">
-      A tiny album from <span id="fromName">Hassan</span> to
-      <span id="toName">My Love</span>
-    </p>
-    <button id="musicBtn" class="btn">▶ Play our song</button>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Memories ❤️</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header id="cover">
+  <h1>Our Story ❤️</h1>
+  <p>Happy Valentine's Day</p>
+  <button onclick="enterSite()">Enter Our Memories</button>
 </header>
 
-<section class="gallery">
-  <h2>Favorite Moments</h2>
-  <div class="grid">
-    <figure class="card">
-      <img src="assets/images/photo1.jpg" alt="Us at the cafe" loading="lazy" />
-      <figcaption>First coffee date – your smile made the day brighter ☕✨</figcaption>
-    </figure>
-    <!-- Add or duplicate more <figure> blocks if you want -->
-  </div>
-</section>
+<main id="main" class="hidden">
 
-<section class="letter">
-  <h2>A Tiny Letter</h2>
-  <p>Every day with you teaches me something gentle about love…</p>
-  <p class="signature">— <span id="signatureName">Hassan</span></p>
-</section>
+  <section>
+    <h2>📸 Favorite Memories</h2>
+    <div class="gallery">
+      <img src="photos/photo1.jpg">
+      <img src="photos/photo2.jpg">
+      <img src="photos/photo3.jpg">
+      <img src="photos/photo4.jpg">
+    </div>
+  </section>
+
+  <section>
+    <h2>💌 A Letter For You</h2>
+    <p>
+      Every photo here is a moment I never want to forget.
+      Thank you for making my life beautiful ❤️
+    </p>
+  </section>
+
+</main>
+
+<audio id="music" src="music/music.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
